@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    
+    background-image: url('./homepageback.jpg');
+  color: beige;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(147, 148, 142, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #452121;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #274c74;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+  
