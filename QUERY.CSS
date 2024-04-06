@@ -1,0 +1,58 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-image: url(./homepageback.jpg);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: beige;
+    background: transparent;
+    background-color: #60717e;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sample-queries {
+    margin-bottom: 20px;
+}
+
+.sample-queries p {
+    font-weight: bold;
+}
+
+.query-box {
+    margin-bottom: 20px;
+}
+
+.query-box input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.query-box button {
+    width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.query-box button:hover {
+    background-color: #0056b3;
+}

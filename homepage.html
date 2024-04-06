@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: beige;">THE OWL'S PERCH</h1>
+        <div class="options" >
+            <div class="option"  onclick="navigateTo('virtual-classroom.html')" style="color: beige;">
+                <h2 >Virtual Classroom</h2>
+                <p>Enter the virtual classroom to access learning materials and interact with instructors.</p>
+            </div >
+            <div class="option" onclick="navigateTo('virtual-interview.html')" style="color: beige;">
+                <h2>Virtual Interview Preparation</h2 >
+                <p>Prepare for your upcoming interviews with mock interviews and helpful resources.</p>
+            </div>
+            <div class="option" onclick="navigateTo('resume-analysis.html')" style="color: beige;">
+                <h2>Resume/CV Analysis</h2>
+                <p>Get feedback on your resume/CV to improve your chances of landing your dream job.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+
+
+

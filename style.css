@@ -33,6 +33,7 @@ form {
 
 input[type="text"],
 input[type="password"],
+input[type="email"],
 button {
   width: 70%;
   padding: 10px;
@@ -55,4 +56,3 @@ button:hover {
   margin-top: 20px;
 }
 
-  

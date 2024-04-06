@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl's Perch QueryBox</title>
+    <link rel="stylesheet" href="QUERY.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Owl's Perch Query Box</h1>
+        <div class="sample-queries">
+            <p>Sample Queries:</p>
+            <ul>
+                <li>Roadmap to Frontend</li>
+                <li>Roadmap to AI in 2024</li>
+                <li>Coding map in python</li>
+                <li>Is competitive programminng relevant now</li>
+                <li>data engineerrinng kaggle sets</li>
+                <!-- Add more sample queries here -->
+            </ul>
+        </div>
+        <div class="query-box">
+            <input type="text" id="queryInput" placeholder="Enter your query...">
+            <button onclick="submitQuery()">Submit</button>
+        </div>
+        <div class="query-results">
+            <!-- Query results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="query.js"></script>
+</body>
+</html>

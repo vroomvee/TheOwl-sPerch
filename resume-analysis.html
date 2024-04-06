@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume/CV Analysis</title>
+    <link rel="stylesheet" href="styleresume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume/CV Analysis</h1>
+        <div class="description">
+            <p>Welcome to our Resume/CV Analysis platform. Upload your resume/CV in PDF format below and click on the button to analyze it.</p>
+        </div>
+        <div>
+            <label for="roleInput">Role Applying For:</label>
+            <input type="text" id="roleInput" placeholder="Enter role here...">
+        </div>
+        <input type="file" id="resumeInput" accept=".pdf">
+        <button onclick="analyzeResume()">Analyze Resume</button>
+    </div>
+
+    <script src="scriptresume.js"></script>
+</body>
+</html>
+

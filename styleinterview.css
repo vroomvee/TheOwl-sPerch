@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style:oblique;
+    background-image: url('./homepageback.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    color: beige;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3e6289;
+    color: #c6b3b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #495b6d;
+}
