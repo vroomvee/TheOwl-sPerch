@@ -9,6 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     event.preventDefault(); // Prevent default form submission
 
     // Get username and password values
+    var EMAIL = document.getElementById("EMAIL").value;
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
