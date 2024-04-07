@@ -569,7 +569,7 @@ class VirtualLearningPlatform:
 
         # Assuming label_output is the name of your label widget
         if data:
-            self.label_output.config(text=str(data))
+            self.label_output.config(text='ID,Name,Email,Password,Resume Score, Next Topic\n' + str(data))
         else:
             self.label_output.config(text="No data found for ID: {}".format(ID))
 
