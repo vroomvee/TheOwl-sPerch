@@ -12,6 +12,40 @@ class VirtualLearningPlatform:
         self.frame_signup.pack_forget()
         self.frame_login.pack_forget()
         self.frame_interface.pack()
+
+        # Buttons for learning
+        self.btn_recommendations = tk.Button(self.frame_interface, text="Recommended Topic", command=self.show_recommendations)
+        self.entry_user_input = tk.Entry(self.frame_interface)
+        self.btn_user_input = tk.Button(self.frame_interface, text="User Input Learning", command=self.show_user_input)
+
+        self.btn_recommendations.pack(pady=10)
+        self.entry_user_input.pack(pady=(5, 0))
+        self.btn_user_input.pack(pady=10)
+
+    def show_recommendations(self):
+        # Code for handling recommended topics
+        mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        passwd = "",
+        database='Owls_Perch_Learner_Database'
+        )
+        cursor = mydb.cursor()
+        cursor.execute('SELECT * FROM learnerinfo WHERE ID = %s', (learner_state,))
+        result = cursor.fetchone()
+        if(not result[4]):
+            self.label_output.config(text='Computer Science')
+        else:
+            recommendation = result[4]
+            self.label_output.config(text=recommendation)
+
+
+    def show_user_input(self):
+        # Code for handling user input learning
+        user_input = self.entry_user_input.get()
+        self.label_output.config(text=user_input)
+
+
     def show_signup(self):
         self.frame_login.pack_forget()
         self.frame_interface.pack_forget()
@@ -142,6 +176,7 @@ class VirtualLearningPlatform:
 
 
     def login(self):
+        global learner_state
         email = self.entry_email.get()
         password = self.entry_password.get()
         connection = mysql.connector.connect(
@@ -170,10 +205,10 @@ class VirtualLearningPlatform:
         # Logic for resume/CV analysis page
         pass
 
-    #TODO: Add Option for recommended topic / Text field input for selection choice + Live display of data + Store score and next topic
+    
     #* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!VIRTUAL LEARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     def virtual_teaching(self):
-
+        global learner_state
         import speech_recognition as sr
         from gtts import gTTS
         import openai
@@ -187,7 +222,7 @@ class VirtualLearningPlatform:
             """
             Gets the user's learning topic.
             """
-            topic = input("Enter the topic you want to learn: ")
+            topic = self.label_output.cget('text')
             return topic
         
         import pathlib
