@@ -241,7 +241,7 @@ class VirtualLearningPlatform:
             text = text.replace('•', '  *')
             return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
-        genai.configure(api_key='AIzaSyBxWAsierATGMSZFJGlMgXTkRG2om__3-I')
+        genai.configure(api_key='')
 
         model = genai.GenerativeModel('gemini-pro')
 
@@ -425,7 +425,7 @@ class VirtualLearningPlatform:
         import speech_recognition as sr
         import pyttsx3
 
-        genai.configure(api_key='AIzaSyBxWAsierATGMSZFJGlMgXTkRG2om__3-I')
+        genai.configure(api_key='')
 
         model = genai.GenerativeModel('gemini-pro')
 
